@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+
+<section class="appointment">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+ 
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-lg-6 col-md-12 col-12">
+                <form class="form" action="#">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group">
+                                <input name="name" type="text" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group">
+                                <input name="email" type="email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group">
+                                <input name="phone" type="text" placeholder="Phone">
+                            </div>
+                        </div>
+
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <input name="subject" type="text" placeholder="subject">
+                                </div>
+
+
+
+
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Write Your Message Here....."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <div class="form-group">
+                                <div class="button">
+                                    <button type="submit" class="btn">submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div  style="padding: 20px ; padding-top: 30px;">
+                <div>
+                    <h2 style="text-transform: uppercase; margin-bottom: 20px ; font-weight: 100;  "><span style="color:gray">Get</span>  <span  style="color: #148673;">in touch</span>  </h2>
+                </div>
+                <div class="appointment-image">
+                    <div style="display:flex ; margin-right: auto;
+                    align-items: center; margin-bottom:20px  ; scroll-padding-left:60px;font-size: medium;font-family: 'Times New Roman', Times, serif;">
+                        <i class="fa fa-map-marker"  aria-hidden="true" style="margin-right: 20px; color: #148673;" ></i>
+                        <p style="font-weight: 700;">BCHARA EL KHOURY BLVD Tripoli, 1300 ,LEBANON</p>
+                    </div>
+                    <div style="display:flex ;align-items: center; margin-bottom:20px">
+                        <i class="fa fa-envelope" aria-hidden="true" style="margin-right: 20px;color: #148673;"></i>
+                        <p style="font-weight: 700;">info@watad.org</p>
+                    </div>   
+                      <div style="display:flex ;align-items: center;margin-bottom:20px">
+                        <i class="fa fa-phone-square" aria-hidden="true" style="margin-right: 20px;color: #148673;"></i>
+                        <p style="font-weight: 700;">+ 961 71 999 166</p>
+                    </div>   
+                      <div style="display:flex ;align-items: center;margin-bottom:20px">
+                        <i class="fa fa-phone-square" aria-hidden="true" style="margin-right: 20px;color: #148673;"></i>
+                        <p style="font-weight: 700;">+961 6 444 966</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  style="font-family: 'Times New Roman', Times, serif; width: 100%;
+    box-shadow: 0px -5px 29px -11px #07453B;
+       -webkit-box-shadow: 0px -5px 29px -11px #07453B;
+       -moz-box-shadow: 0px -5px 29px -11px #07453B;     font-family: 'Poppins', sans-serif ; border-top-left-radius: 20px ; border-top-right-radius: 20px ; background-color: white; width: auto;padding: 40px 40px 0 40px;">
+       					<div style=" width: 100%; padding: 10px 0 10px 0; display: flex ; justify-content : center;">
+                            <img src="../static/img/watad.png" alt=" logo" style="width: 100px; height: 100px;"/>
+                        </div>
+                        <ul class= "social" style= "display: inline-flex ; width: 100% ; justify-content: center ; gap: 10px;">
+                            <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                            <li><a href="#"><i class = "icofont-google-plus"></i></a></li>
+                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                            <li><a href="#"><i class="icofont-vimeo"></i></a></li>
+                            <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                        </ul>
+                        <div class="copyright" style="  padding : 20px 0 20px 0">
+                            <div class="container" style="display :flex ;  width : 100%; justify-content: center;">
+                                <div class="row" >
+                                    <div class="col-lg-12 col-md-12 col-12">
+                                        <div class="copyright-content" style=" font-family: 'Poppins', sans-serif ;">
+                                            <p style="color: #07453B ; font-weight: 100;">© Copyright 2023 | All Rights Reserved by Nozha Medical Center</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+       </div>
+</section>
+
+
+
+{% endblock content %}

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+
+
+
+
+  <!-- container -->
+        <section class="projects" id="projects">
+        <h2 class="title text-center pt-3 pb-3">Activities</h2> 
+        <div class="content">
+    <div class="container">
+
+    
+      <!-- row -->
+
+
+
+      <div class="row">
+        
+        
+   
+        <div class="project-card">
+            <div class="project-image">
+                <img src="{% static 'img/team.png' %}"/>
+            </div>
+        <div class="project-info"> 
+          <h6 style="color:#2F878b">JOB VAVANCIES</h6><br>
+            <p> JOIN OUR TEAM</p>
+            <strong class="project-title"> <br><br><br><br><br><br><br><br>
+                <a href="activity"><activity dcodeyt target="_blank">More</a>
+                <span>October 16, 2023</span>
+            </strong>
+
+
+        </div>
+    </div>
+
+    {% for i in activites  %}
+
+         <a href="newsactivity">
+          <div class="project-card">
+            <div class="project-image">
+                <img src="{{i.image.url}}"/>
+            </div>
+        <div class="project-info"> 
+          <h6 style="color:#2F878b"> {{i.title}}</h6><br>
+            <p>{{i.desc}}</p>
+            <strong class="project-title"> <br>
+                <span>{{i.date}}</span>
+            </strong>
+
+
+        </div>
+    </div>
+</a>  {% endfor %}
+
+
+  
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+  
+  
+      
+    
+
+{% endblock content %}
